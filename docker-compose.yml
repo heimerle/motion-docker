@@ -1,4 +1,4 @@
-version: '1'
+version: '3.3'
 services:
   motion:
     image: motionproject/motion:latest
@@ -14,6 +14,6 @@ services:
     environment:
       - TZ=Europe/Berlin
     volumes:
-      - /volume1/motion/config:/etc/motion
+      - /volume1/motion/config:/usr/local/etc/motion
       - /volume1/motion/storage:/var/lib/motion
     restart: always
