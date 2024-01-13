@@ -1,5 +1,8 @@
 FROM ubuntu:18.04 AS build
 
+# mark it with label for CI/CD pipeline
+LABEL cicd="hello ci/cd world"
+
 # Setup build environment
 RUN export DEBIAN_FRONTEND=noninteractive; \
     export DEBCONF_NONINTERACTIVE_SEEN=true; \
