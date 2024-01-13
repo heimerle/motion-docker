@@ -53,11 +53,11 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 COPY --from=build /usr/local /usr/local
 
 # R/W needed for motion to update configurations
-VOLUME /etc/motion
+VOLUME /usr/local/etc/motion
 # R/W needed for motion to update Video & images
 VOLUME /var/lib/motion
 
-CMD test -e /etc/motion/motion.conf || \
-    cp /etc/motion/motion-dist.conf /etc/motion/motion.conf
+CMD test -e /usr/local/etc/motion/motion.conf || \
+    cp /usr/local/etc/motion/motion-dist.conf /usr/local/etc/motion/motion.conf
 
 CMD [ "motion", "-n" ]
