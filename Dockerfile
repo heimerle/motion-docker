@@ -50,7 +50,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 COPY --from=build /usr/local /usr/local
 
 # R/W needed for motion to update configurations
-VOLUME /usr/local/etc/motion
+VOLUME /etc/motion
 # R/W needed for motion to update Video & images
 VOLUME /var/lib/motion
 
