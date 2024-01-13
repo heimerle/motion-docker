@@ -16,4 +16,5 @@ services:
     volumes:
       - /volume1/motion/config:/usr/local/etc/motion
       - /volume1/motion/storage:/var/lib/motion
+      - /volume1/motion/logs:/var/log/motion
     restart: always
