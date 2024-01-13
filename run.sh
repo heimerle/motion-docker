@@ -1,3 +1,6 @@
+# source
+# https://keestalkstech.com/2019/11/docker-on-synology-from-git-to-running-container-the-easy-way/
+
 #!/bin/sh
 export DOCKER_SCAN_SUGGEST=false
 
