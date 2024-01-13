@@ -4,7 +4,7 @@ services:
     image: motionproject/motion:latest
     container_name: motion
     ports:
-      - 17999:7999
+      - 18080:8080
       - 18081:8081
       - 18082:8082
       - 18083:8083
